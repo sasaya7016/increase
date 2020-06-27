@@ -18,7 +18,7 @@
 
     @auth
     <li class="nav-item">
-      <a class="nav-link" href=""><i class="fas fa-pen mr-1"></i>投稿する</a>
+      <a class="nav-link" href="{{ route('articles.create') }}"><i class="fas fa-pen mr-1"></i>投稿する</a> 
     </li>
     @endauth
 
@@ -40,7 +40,7 @@
         </button>
       </div>
     </li>
-    <<form id="logout-button" method="POST" action="{{ route('logout') }}"> {{--この行を編集--}}
+    <form id="logout-button" method="POST" action="{{ route('logout') }}"> 
       @csrf
     </form>
     <!-- Dropdown -->
